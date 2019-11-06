@@ -1,0 +1,41 @@
+$error-color: #DA2C38;
+$select-color: #7CEA9C;
+$back-color: #6A4C93;
+$success-color: #98CE00;
+$disabled-color: #EEE5E9;
+$font-color: #EFD28D;
+
+.container {
+    background-color: $back-color;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    color: $error-color;
+    font-size: 2rem;
+    main {
+        width: 90vw;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        background-color: $disabled-color;
+        width: 100vw;
+        height: 15vh;
+        margin-bottom: 5vh;
+        box-shadow: 0px 2px 10px black;
+        h1 {
+            font-size: 3rem;
+            justify-self: flex-start;
+            margin-right: auto;
+            margin-left: 2vw;
+            color: $back-color;
+        }
+        div {
+            margin-right: 2vw;
+        }
+    }
+}
