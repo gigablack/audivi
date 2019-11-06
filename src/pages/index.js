@@ -13,7 +13,7 @@ const data = ['C4','D4','E4','F4','G4','A4','B4']
 
 const HomePage = () => {
     const [board,dispatch] = useReducer(reducer,State)
-    const [synth] = useState(new Tone.Synth().toMaster())
+    const [synth,setSynth] = useState(null)
     
     useEffect(()=>{
         if(!board.gameOver){
@@ -23,6 +23,7 @@ const HomePage = () => {
             Swal.fire('Ganaste','','success')
             dispatch(initGame(GameBoard))
         }
+        setSynth(new Tone.Synth().toMaster())
     },[board.gameOver,board.playerVictory])
     return (
         <div className={container}>
