@@ -1,11 +1,12 @@
 class Card {
-    constructor(note,index){
+    constructor(note,name,index){
         this.note = note
         this.isSelected = false
         this.index = index
         this.onError = false
         this.onSuccess = false
         this.isPlayable = true
+        this.name = name
     }
 
     select = () => this.isSelected = true

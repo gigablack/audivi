@@ -9,7 +9,7 @@ import LifesContainer from '../Components/LifesContainer.jsx'
 import Tone from 'tone'
 import Swal from 'sweetalert2'
 
-const data = ['C4','D4','E4','F4','G4','A4','B4']
+const data = [{note: 'C4',name: 'Do'},{note: 'D4',name: 'Re'},{note: 'E4',name: 'Mi'},{note: 'F4',name:'Fa'},{note: 'G4',name:'Sol'},{note: 'A4',name:'La'},{note: 'B4',name: 'Si'}]
 
 const HomePage = () => {
     const [board,dispatch] = useReducer(reducer,State)

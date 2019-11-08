@@ -19,6 +19,14 @@ $font-color: #EFD28D;
         border-right: none;
         color: $font-color;
         font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            margin: auto;
+            font-family: 'Staatliches', cursive;
+            user-select: none;
+        }
     }
     button:focus {
         outline: none;

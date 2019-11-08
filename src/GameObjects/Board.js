@@ -49,10 +49,11 @@ class Board {
         })
     }
 
-    addCard = (note) => {
-        this.cards.push(new Card(note,this.cardIndex))
+    addCard = (card) => {
+        const {note,name} = card
+        this.cards.push(new Card(note,name,this.cardIndex))
         this.indexUp()
-        this.cards.push(new Card(note,this.cardIndex))
+        this.cards.push(new Card(note,name,this.cardIndex))
         this.indexUp()
     }
 
@@ -110,6 +111,7 @@ class Board {
         this.resetLifes()
         this.unSetVictory()
         this.resetCardsPlayed()
+        this.cardSelected = null
     }
 
     isGameOver = () => {

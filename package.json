@@ -18,6 +18,7 @@
     "node-sass": "^4.13.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-pose": "^4.0.9",
     "sweetalert2": "^9.1.5",
     "tone": "^13.8.25"
   },
