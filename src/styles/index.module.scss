@@ -27,11 +27,14 @@ $font-color: #EFD28D;
         height: 15vh;
         margin-bottom: 5vh;
         box-shadow: 0px 2px 10px black;
+        img {
+            height: 80%;
+            margin-left: 2vw;
+        }
         h1 {
             font-size: 3rem;
             justify-self: flex-start;
             margin-right: auto;
-            margin-left: 2vw;
             color: $back-color;
         }
         div {
